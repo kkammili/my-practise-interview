@@ -17,6 +17,54 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+// my solution
+// function steps(n) {
+//     let row = 1;
+//     while(row<=n){
+//         let arr = Array.from({length:n},(x,column)=>{
+//             // index is array index
+//             // i is loop index
+//             if(row<=column){
+//                 return " "
+//             }
+//             return "#"
+//         })
+//         console.log(arr.join(''))
+//         row++;
+//     }
+// }
+
+function steps(n){
+    for(let row = 0;row < n; row++){
+        let stair = ''
+        for(let column = 0; column <n; column ++){
+            if(column<=row){
+                stair = stair + "#"
+            }else{
+                stair = stair + " "
+            }
+        }
+        console.log(stair)
+    }
+}
+
+//recursive solution
+
+// function steps(n, row = 0, stair = ''){
+//     if(n === row){
+//         return
+//     }
+//     if(n === stair.length){
+//         console.log(stair.length)
+//         return steps(n, row + 1)
+//     }
+//     if(stair.length <= row){
+//         stair += "#";
+//     }else{
+//         stair += " "
+//     }
+//     const add = stair.length <=row ? "#":' ';
+//     steps(n, row, stair+ add)
+// }
 
 module.exports = steps;
