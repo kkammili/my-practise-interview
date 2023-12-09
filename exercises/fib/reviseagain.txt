@@ -1,0 +1,14 @@
+regex
+matrix
+rest, spread, apply
+
+rest and spread example
+function sum(...args) {
+    console.log(args)
+    // return x + y + z;
+}
+
+const numbers = [1, 2, 3];
+
+console.log(sum(...numbers));
+// Expected output: 6
