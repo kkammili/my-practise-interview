@@ -24,6 +24,44 @@
 
 const Queue = require('./queue');
 
-function weave(sourceOne, sourceTwo) {}
+// my wrong code sincec I'm not using queue which already exist.
+
+// function weave(sourceOne, sourceTwo) {
+//     let maxLen = Math.max(sourceOne.data.length, sourceTwo.data.length);
+//     let weaved = [];
+
+//     for (let i = maxLen - 1; i >= 0; i--) {
+//         if (sourceOne.data[i]) {
+//             weaved.unshift(sourceOne.data[i]);
+//         }
+
+//         if (sourceTwo.data[i]) {
+//             weaved.unshift(sourceTwo.data[i]);
+//         }
+//     }
+
+//     return {
+//         remove: function () {
+//             return weaved.pop();
+//         },
+//     };
+
+// }
+
+function weave(sourceOne, sourceTwo) {
+    const q = new Queue()
+
+    while (sourceOne.peek() || sourceTwo.peek()) {
+        if (sourceOne.peek()) {
+            q.add(sourceOne.remove())
+        }
+
+        if (sourceTwo.peek()) {
+            q.add(sourceTwo.remove())
+        }
+    }
+
+    return q;
+}
 
 module.exports = weave;
