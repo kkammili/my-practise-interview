@@ -14,5 +14,7 @@ const numbers = [1, 2, 3];
 console.log(sum(...numbers));
 // Expected output: 6
 
+circular list, comparing objects with reference
+
 
 qfroms solution
