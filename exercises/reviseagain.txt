@@ -16,5 +16,7 @@ console.log(sum(...numbers));
 
 circular list, comparing objects with reference
 
+fromLast for loop why n + 1 ?
+
 
 qfroms solution
