@@ -18,5 +18,6 @@ circular list, comparing objects with reference
 
 fromLast for loop why n + 1 ?
 
-
 qfroms solution
+
+why DFS does working with es5 for loop and works only with es6
