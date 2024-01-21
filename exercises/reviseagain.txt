@@ -21,3 +21,16 @@ fromLast for loop why n + 1 ?
 qfroms solution
 
 why DFS does working with es5 for loop and works only with es6
+
+Note for pop() and push():
+
+pop() has a shorter name than push().
+pop() removes the last array item.
+push() appends items to the array.
+Similarly, shift() vs unshift():
+
+shift() has a shorter name than unshift().
+shift() removes the first array item.
+unshift() prepends items to the array.
+
+bst validate definately should revise
