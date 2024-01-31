@@ -34,3 +34,7 @@ shift() removes the first array item.
 unshift() prepends items to the array.
 
 bst validate definately should revise
+
+
+pyramid, matrix, qfroms, fromLast, levelwidth, validate
+27. events array acting as objects?
