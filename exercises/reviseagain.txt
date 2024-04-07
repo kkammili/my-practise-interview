@@ -38,3 +38,4 @@ bst validate definately should revise
 
 pyramid, matrix, qfroms, fromLast, levelwidth, validate
 27. events array acting as objects?
+revise sorting
