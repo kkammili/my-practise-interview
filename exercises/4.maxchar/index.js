@@ -5,6 +5,15 @@
 // maxChar("abcccccccd") === "c"
 // maxChar("apple 1231111") === "1"
 
+/*
+Mnemonic: "A Cat In Snow"
+Parameters of the reduce Function
+accumulator (acc)
+currentValue (cur)
+currentIndex (idx) [Optional]
+sourceArray (arr) [Optional]
+*/
+
 function maxChar(str) {
     // creating hash map
    const chars = {}
@@ -16,13 +25,14 @@ function maxChar(str) {
     }
    }
 
-   // Finding highest value in array
-   const high = Object.values(chars).reduce((prev, curr, ind, arr)=>{
-     return prev > curr ? prev : curr
+   // Finding largest number in array
+   //[1,2,3,4]
+   const high = Object.values(chars).reduce((acc, curr, ind, arr)=>{
+     return acc > curr ? acc : curr
    })
-   // Finding index of highest item
+   // Finding index of largest number
    const index = Object.values(chars).indexOf(high)
-   // Returning associated key
+   // Returning key associated with the largest number
    return Object.keys(chars)[index]
 }
 
