@@ -1,1 +1,4 @@
 https://leetcode.com/studyplan/leetcode-75/
+
+couldn't solve 2
+2. check gcd solution
