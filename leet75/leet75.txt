@@ -4,3 +4,4 @@ couldn't solve 2
 2. check gcd solution
 
 4. Struggled complete day for getting for flower bed solution
+7. failed
