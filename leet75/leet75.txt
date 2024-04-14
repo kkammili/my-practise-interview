@@ -5,3 +5,5 @@ couldn't solve 2
 
 4. Struggled complete day for getting for flower bed solution
 7. failed
+# Problem 334: Increasing Triplet Subsequence not even understanding solution
+
