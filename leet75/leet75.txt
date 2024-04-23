@@ -30,3 +30,5 @@ wanted keys to be an array ?
 const keysArray = Array.from(map.keys())
 // or using spread operator
 const keysArray2 = [...map.keys()]
+
+// stack ast collision took me a day
