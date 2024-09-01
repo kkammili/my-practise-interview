@@ -35,6 +35,18 @@ const numbers = [1, 2, 3];
 console.log(sum(...numbers));
 // Expected output: 6
 
+//Finding largest num
+const arr = [2,4,7,1,3]
+const lgst = Math.max.apply(null, arr)
+// output: 7
+or
+lgst = Math.max(...arr)
+
+
+// How to remove chars from string just like arr
+we can use replace with regex or slice 
+https://www.scaler.com/topics/javascript-remove-character-from-string/
+
 circular list, comparing objects with reference
 
 fromLast for loop why n + 1 ?
