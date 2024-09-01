@@ -133,5 +133,37 @@ function merge(left, right) {
     return [...results, ...left, ...right];
 }
 
+function quickSort(arr) {
+    if (arr.length <= 1) {
+        return arr; // Base case: arrays with 0 or 1 element are already sorted
+    }
+
+    let pivot = arr[arr.length - 1]; // Choose the last element as the pivot
+    let left = [];
+    let right = [];
+
+    // Partition the array into two halves
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] < pivot) {
+            left.push(arr[i]); // Elements less than the pivot go to the left array
+        } else {
+            right.push(arr[i]); // Elements greater than or equal to the pivot go to the right array
+        }
+    }
+
+    // Recursively sort the left and right arrays, then concatenate with the pivot
+    return [...quickSort(left), pivot, ...quickSort(right)];
+}
+
+// Example Usage:
+let arr = [3, 6, 8, 10, 1, 2, 1];
+let sortedArr = quickSort(arr);
+console.log(sortedArr); // Output: [1, 1, 2, 3, 6, 8, 10]
+
+/* using js provided method
+    arr.sort((a,b) => a-b)
+    sorts the arr in asc order
+*/
+
 
 module.exports = { bubbleSort, selectionSort, mergeSort, merge };

@@ -1,3 +1,6 @@
+read grokking algorithms book
+and check bookmarks
+
 /*
 Reduce ho function Parameters
 Mnemonic: "A Cat In Snow"
