@@ -45,6 +45,11 @@ const lgst = Math.max.apply(null, arr)
 or
 lgst = Math.max(...arr)
 
+// convert a number to binary digits
+num.toString(2)
+output: binary digits
+
+// if js cannot hold response in variable use BigInt(number) so that resp/output not becomes infinity
 
 // How to remove chars from string just like arr
 we can use replace with regex or slice 
@@ -67,3 +72,11 @@ bst validate definately should revise
 pyramid, matrix, qfroms, fromLast, levelwidth, validate
 27. events array acting as objects?
 revise sorting
+
+let num = 123;     // This is a regular Number
+let bigNum = 123n; or let bigNum = BigInt(123) // This is a BigInt
+console.log(2n + 3n);   // 5n (BigInt addition)
+console.log(2 + 3);     // 5 (Number addition)
+// This will throw an error
+console.log(2n + 3);    // TypeError: Cannot mix BigInt and other types
+
